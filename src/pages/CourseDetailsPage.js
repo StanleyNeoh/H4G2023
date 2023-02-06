@@ -1,5 +1,6 @@
-import CourseBanner from "../components/CourseBanner";
-import CourseNav from "../components/CourseNav";
+import CourseBanner from "../components/courses/CourseBanner";
+import CourseNav from "../components/courses/CourseNav";
+import CourseReview from "../components/courses/CourseReview";
 
 const CourseDetailPage = () => {
   return (
@@ -14,6 +15,7 @@ const CourseDetailPage = () => {
       <hr />
       <CourseNav />
       <hr />
+      <CourseReview />
     </div>
   )
 }
