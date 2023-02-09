@@ -14,6 +14,7 @@ const AppRoutes = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<CourseDetailsPage />} />
         <Route exact path="/courses" element={<AllCouresPage />} />
+        <Route exact path="/courses/:category/:courseName" element={<CourseDetailsPage />} />
       </Routes>
       <Footer />
     </Router>
