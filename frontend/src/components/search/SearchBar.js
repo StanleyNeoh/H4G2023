@@ -11,7 +11,7 @@ const SearchBar = () => {
   return (
     <Paper
       component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', mx: 30}}
+      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', mx: 3}}
     >
       <FormControl sx={{ m: 1 }} variant="filled" fullWidth>
         <OutlinedInput

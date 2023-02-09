@@ -1,5 +1,6 @@
 import * as React from 'react';
 import CourseCard from '../components/courses/CourseCard';
+import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Pagination from '@mui/material/Pagination';
@@ -16,9 +17,9 @@ const courses = [
 
 const AllCouresPage = () => {
   return (
-    <main>
+    <Box maxWidth='lg' margin="auto">
       <SearchBar />
-      <Container sx={{ py: 5 }} maxWidth="md">
+      <Container sx={{ py: 5 }}>
         <Grid container spacing={4}>
           {courses.map((course) => (
             <Grid item key={course} xs={12} sm={6} md={4}>
@@ -34,7 +35,7 @@ const AllCouresPage = () => {
       <Stack alignItems="center" sx={{ py: 5}}>
         <Pagination count={6} variant="outlined" color="primary" />
       </Stack>
-    </main>
+    </Box>
   )
 }
 

@@ -1,60 +1,48 @@
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import TextField from '@mui/material/TextField';
-import List from '@mui/material/List';
+import Grid from '@mui/material/Grid';
 import ReviewItem from './ReviewItem';
-import Button from '@mui/material/Button';
 
 export default function CourseReview() {
   const reviews = [
-    { name: "Alice", feedback: "That's great" },
-    { name: "Bob", feedback: "That's great" }
-  ]
+    {
+      title: 'Featured post',
+      date: 'Nov 12',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+    },
+    {
+      title: 'Post title',
+      date: 'Nov 11',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+    },
+    {
+      title: 'Featured post',
+      date: 'Nov 12',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+    },
+    {
+      title: 'Post title',
+      date: 'Nov 11',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+    },
+  ];
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-      }}
-    >
-      <CssBaseline />
-      <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
-        <Typography variant="h4" gutterBottom>
-          Reviews
-        </Typography>
-
-        {/* Review lists */}
-        <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
-          {reviews.map((item) => (
-            <ReviewItem name={item.name} feedback={item.feedback} />
-          ))}
-        </List>
-      </Container>
-      <Box
-        component="footer"
-        sx={{
-          py: 3,
-          px: 2,
-          mt: 'auto',
-        }}
-      >
-        <Container maxWidth="sm">
-          <TextField
-            sx={{width: '100%'}}
-            label='Write a review'
-            multiline
-            placeholder='Share your experience'
-            rows={3}
-            variant='standard'
-          />
-          <Button variant='outlined'>Submit</Button>
-        </Container>
-      </Box>
-    </Box>
+    <Grid container spacing={4} sx={{ my: 5}}>
+      {reviews.map((post) => (
+        <ReviewItem key={post.title} post={post} />
+      ))}
+    </Grid>
   );
 }

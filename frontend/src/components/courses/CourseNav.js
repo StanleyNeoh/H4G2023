@@ -1,16 +1,14 @@
 import * as React from 'react';
+import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import { Button } from '@mui/material';
 
 const CourseNav = () => {
   return (
-    <div>
-      <Stack direction="row" spacing={2}>
-        <Button>About</Button>
-        <Button>Instructors</Button>
-        <Button>Review</Button>
-      </Stack>
-    </div>
+    <Stack direction="row" spacing={20} alignItems="center" justifyContent="center">
+      <Button href='#instructor'>Instructor</Button>
+      <Button href='#about'>About</Button>
+      <Button href='#review'>Review</Button>
+    </Stack>
   );
 }
 
