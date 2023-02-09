@@ -2,6 +2,8 @@ import * as React from 'react';
 import CourseCard from '../components/courses/CourseCard';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
@@ -58,7 +60,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const AllCouresPage = () => {
   return (
     <main>
-      {/* Hero unit */}
       <Search>
         <SearchIconWrapper>
           <SearchIcon />
@@ -68,8 +69,7 @@ const AllCouresPage = () => {
           inputProps={{ 'aria-label': 'search' }}
         />
       </Search>
-      <Container sx={{ py: 8 }} maxWidth="md">
-        {/* End hero unit */}
+      <Container sx={{ py: 5 }} maxWidth="md">
         <Grid container spacing={4}>
           {courses.map((course) => (
             <Grid item key={course} xs={12} sm={6} md={4}>
@@ -78,6 +78,9 @@ const AllCouresPage = () => {
           ))}
         </Grid>
       </Container>
+      <Stack alignItems="center" sx={{ py: 5}}>
+        <Pagination count={6} variant="outlined" color="primary" />
+      </Stack>
     </main>
   )
 }
