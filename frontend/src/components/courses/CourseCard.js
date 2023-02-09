@@ -16,7 +16,7 @@ const CourseCard = ({category, title, image, description, rating}) => {
           <CardMedia
             component="img"
             sx={{ height: 140 }}
-            image={image}
+            image='https://source.unsplash.com/random'
             title="green iguana"
           />
           <CardContent>
