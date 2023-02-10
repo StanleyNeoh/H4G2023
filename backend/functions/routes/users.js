@@ -1,17 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var { db, admin } = require('../util/admin');
+var { db, admin, auth } = require('../util/admin');
 var authMiddleware = require('../util/auth/auth');
+var { getAllJoinedCourses } = require('../util/db/user_course');
 
 var { validateSignUpData, validateLoginData } = require('../util/auth/validators');
-var { initializeApp }  = require("firebase/app")
 var { signInWithEmailAndPassword, createUserWithEmailAndPassword, getAuth} = require('firebase/auth');
-
-
-const config = require('../util/config.json');
-const firebase = initializeApp(config);
-const auth = getAuth(firebase);
-
 
 // Login
 router.post('/login', function (req, res, next) {
@@ -138,6 +132,10 @@ router.get('/', function(req, res, next) {
     })
 })
 
-
+router.get('/courses', async (req, res, next) => {
+    const { id } = req.user;
+    const courses = await getAllJoinedCourses(id);
+    res.json(courses);
+})
 
 module.exports = router;

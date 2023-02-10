@@ -40,6 +40,8 @@ async function updateCourse(id, updates) {
 }
 
 module.exports = {
+    coursesName,
+    coursesCollection,
     getCourse,
     getAllCourses,
     addCourse,

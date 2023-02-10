@@ -1,10 +1,12 @@
 const express = require('express');
+const isAuth = require('../util/auth/auth');
 const {
-    getCourse,
-    getAllCourses,
-    addCourse,
-    deleteCourse,
-    updateCourse,
+    getUserCourse,
+    isUserInCourse,
+    joinCourse,
+    leaveCourse,
+    getAllJoinedCourses,
+    getAllParticipants,
 } = require('../util/db/course');
 
 const router = express.Router();
@@ -27,19 +29,39 @@ router.get('/:id', async (req, res, next) => {
     } catch(e) {
         res.status(404).send(e)
     }
-})
+});
 
 router.delete('/:id', async (req, res, next) => {
     const { id } = req.params;
     const course = await deleteCourse(id);
     res.json(course);
-})
+});
 
 router.patch('/:id', async (req, res, next) => {
     const { id } = req.params;
     const updates = req.body;
     const course = await updateCourse(id, updates);
     res.json(course);
-})
+});
+
+router.post('/:id/participation', isAuth, async (req, res, next) => {
+    const courseId = req.params.id;
+    const userId = req.user.id;
+    await joinCourse(userId, courseId);
+    res.json({ join: true });
+});
+
+router.delete('/:id/participation', isAuth, async (req, res, next) => {
+    const courseId = req.params.id;
+    const userId = req.user.id;
+    await leaveCourse(userId, courseId);
+    res.json({ join: false });
+});
+
+router.get("/:id/users", async (req, res, next) => {
+    const courseId = req.params.id;
+    const users = await getAllParticipants(courseId);
+    res.json(users);
+});
 
 module.exports = router;
