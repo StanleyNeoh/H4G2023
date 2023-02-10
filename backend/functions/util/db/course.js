@@ -1,4 +1,4 @@
-const { db } = require('./config');
+const { db } = require('../admin');
 
 const coursesName = "courses";
 const coursesCollection = db.collection(coursesName);

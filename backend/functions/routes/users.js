@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var { db, admin } = require('../util/admin');
-var authMiddleware = require('../util/auth');
+var authMiddleware = require('../util/auth/auth');
 
-var { validateSignUpData, validateLoginData } = require('../util/validators');
+var { validateSignUpData, validateLoginData } = require('../util/auth/validators');
 var { initializeApp }  = require("firebase/app")
 var { signInWithEmailAndPassword, createUserWithEmailAndPassword, getAuth} = require('firebase/auth');
 

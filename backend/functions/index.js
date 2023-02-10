@@ -16,7 +16,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 var userRouter = require('./routes/users');
+var courseRouter = require('./routes/courses');
 
 app.use('/users', userRouter);
+app.use('/courses', courseRouter);
 
 exports.api = functions.https.onRequest(app);
