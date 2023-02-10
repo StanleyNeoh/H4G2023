@@ -5,7 +5,7 @@ const {
     addCourse,
     deleteCourse,
     updateCourse,
-} = require('../db/course');
+} = require('../util/db/course');
 
 const router = express.Router();
 

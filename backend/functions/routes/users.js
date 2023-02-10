@@ -91,7 +91,7 @@ router.post('/signup', function (req, res) {
 router.use(authMiddleware);
 
 // Update profile 
-router.put('/updateUser', function(req, res, next) {
+router.patch('/update', function(req, res, next) {
     let user = db.doc(`/users/${req.user.email}`);
 
     let newInfo = {
@@ -116,7 +116,7 @@ router.put('/updateUser', function(req, res, next) {
 
 
 // Get profile 
-router.get('/getProfile', function(req, res, next) {
+router.get('/', function(req, res, next) {
     let user = {};
 
     db.doc(`/users/${req.user.email}`)

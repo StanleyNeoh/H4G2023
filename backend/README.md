@@ -1,19 +1,26 @@
-# API documentation
+# H4G2023 Backend
 
-## Course collection
-> Handles CRUD on courses
-```json
-{
-    "id": "string",
-    "name": "string",
-    "description": "string"
-}
-```
+Utilises the following techstacks:
+* Firebase functions
+* Firestore
+* Express
+* Firebase authentication
 
-| **Route**       | **Method** | **Request**              | **Response** | **Exceptions**  | **Description**              |
-|-----------------|------------|--------------------------|--------------|-----------------|------------------------------|
-| /api/course     | GET        | -                        | course[]     | -               | Gets all courses             |
-| /api/course/:id | GET        | -                        | course       | 404 - Not found | Gets course of given id      |
-| /api/course     | POST       | course (without id)      | course       | -               | Adds a new course            |
-| /api/course/:id | DELETE     | -                        | course       | -               | Deletes course of given id   |
-| /api/course/:id | PATCH      | course (fields optional) | course       | -               | Updates a course of given id |
+## Setup and installation
+1. cd into the backend folder
+1. run `npm install` to install dependencies
+1. run `firebase serve` to serve functions locally
+
+##
+
+| **Route**    | **Method** | **Request**                                           | **Response** | **Description**                           |
+|--------------|------------|-------------------------------------------------------|--------------|-------------------------------------------|
+| /course      | GET        | -                                                     | course[]     | Gets all courses                          |
+| /course/:id  | GET        | -                                                     | course       | Gets course of given id                   |
+| /course      | POST       | { name, description }                                 | course       | Adds a new course                         |
+| /course/:id  | DELETE     | -                                                     | course       | Deletes course of given id                |
+| /course/:id  | PATCH      | course (fields optional)                              | course       | Updates a course of given id              |
+| /user/login  | POST       | {email, password}                                     | { token }    | Retrieves login token                     |
+| /user        | GET        | -                                                     | user         | Gets logged in user details               |
+| /user/signup | POST       | {name, email, password}                               | { token }    | Creates account and retrieves login token |
+| /user/update | PATCH      | {name?, password?, type?, street?, sex?, disability?} | { message }  | Updates user details                      |
