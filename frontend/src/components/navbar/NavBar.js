@@ -19,8 +19,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <p><Link to='/login'>Sign in</Link></p>
+        <button type="button"><Link to='/register'>Sign up</Link></button>
       </div>
       <div className="navbar-menu">
         {toggleMenu

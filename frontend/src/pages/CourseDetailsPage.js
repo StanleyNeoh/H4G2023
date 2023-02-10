@@ -6,6 +6,7 @@ import CourseReview from "../components/courses/CourseReview";
 import Instructor from "../components/courses/Instructor";
 import CourseAbout from "../components/courses/CourseAbout";
 import Heading from '../components/common/Heading';
+import CourseChat from '../components/courses/chat/CourseChat';
 
 const CourseDetailPage = () => {
   const instructor = {
