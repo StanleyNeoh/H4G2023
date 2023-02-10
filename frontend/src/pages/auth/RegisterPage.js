@@ -3,6 +3,7 @@ import { Container } from "@mui/system"
 import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { register_API_path } from "../../strings"
+import LoggedIn from "./LoggedIn"
 
 const Register = () => {
     const navigate = useNavigate()
@@ -45,6 +46,7 @@ const Register = () => {
 
     return (
         <Container maxWidth="sm" margin="auto">
+            {localStorage.getItem("AuthToken") ? <LoggedIn /> : ""}
             <Box sx={{
                 marginTop: 8,
                 display: 'flex',
