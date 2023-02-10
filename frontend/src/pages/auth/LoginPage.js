@@ -31,7 +31,7 @@ const Login = () => {
         await fetch(login_API_path, settings)
             .then(res => res.json())
             .then(obj => {
-                localStorage.setItem("token", obj.token)
+                localStorage.setItem('AuthToken', `Bearer ${obj.token}`)
                 navigate("/")
             })
             .catch(err => console.log(err))
