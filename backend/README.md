@@ -30,3 +30,7 @@ Utilises the following techstacks:
 | /users                     | POST       | {name, email, password}                    | { token }                                 | Creates account and retrieves login token |
 | /users                     | PATCH      | {name?, type?, street?, sex?, disability?} | { message }                               | Updates user details                      |
 | /users/courses             | GET        | -                                          | course[]                                  | Get all courses that user joined          |
+| /reviews/:courseId         | POST       | { comment, stars }                         | review                                    | Adds a new review for the given course    |
+| /reviews/:id               | DELETE     | -                                          | review                                    | Deletes review of given id                |
+| /reviews/:id               | PATCH      | review (fields optional)                   | review                                    | Updates a review of given id              |
+| /reviews/:id               | GET        | -                                          | review                                    | Get the review with given id              |
