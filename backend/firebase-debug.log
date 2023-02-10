@@ -1,0 +1,835 @@
+[debug] [2023-02-10T18:19:20.652Z] ----------------------------------------------------------------------
+[debug] [2023-02-10T18:19:20.653Z] Command:       /usr/local/bin/firebase /home/stanleyneoh/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2023-02-10T18:19:20.653Z] CLI Version:   11.22.0
+[debug] [2023-02-10T18:19:20.653Z] Platform:      linux
+[debug] [2023-02-10T18:19:20.653Z] Node Version:  v16.16.0
+[debug] [2023-02-10T18:19:20.654Z] Time:          Sat Feb 11 2023 02:19:20 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-10T18:19:20.654Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-10T18:19:20.714Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-10T18:19:20.715Z] > authorizing via signed-in user (neohstanley@gmail.com)
+[debug] [2023-02-10T18:19:20.715Z] [iam] checking project h4g2023 for permissions ["firebase.projects.get"]
+[debug] [2023-02-10T18:19:20.716Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions [none]
+[debug] [2023-02-10T18:19:20.716Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions x-goog-quota-user=projects/h4g2023
+[debug] [2023-02-10T18:19:20.716Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-10T18:19:23.999Z] ----------------------------------------------------------------------
+[debug] [2023-02-10T18:19:24.000Z] Command:       /usr/local/bin/firebase /home/stanleyneoh/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2023-02-10T18:19:24.000Z] CLI Version:   11.22.0
+[debug] [2023-02-10T18:19:24.000Z] Platform:      linux
+[debug] [2023-02-10T18:19:24.000Z] Node Version:  v16.16.0
+[debug] [2023-02-10T18:19:24.001Z] Time:          Sat Feb 11 2023 02:19:24 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-10T18:19:24.001Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-10T18:19:24.061Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-10T18:19:24.061Z] > authorizing via signed-in user (neohstanley@gmail.com)
+[debug] [2023-02-10T18:19:24.062Z] [iam] checking project h4g2023 for permissions ["firebase.projects.get"]
+[debug] [2023-02-10T18:19:24.063Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions [none]
+[debug] [2023-02-10T18:19:24.063Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions x-goog-quota-user=projects/h4g2023
+[debug] [2023-02-10T18:19:24.063Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-10T18:19:25.054Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions 200
+[debug] [2023-02-10T18:19:25.055Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-10T18:19:25.055Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 [none]
+[debug] [2023-02-10T18:19:25.549Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 200
+[debug] [2023-02-10T18:19:25.549Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 {"projectId":"h4g2023","projectNumber":"482882506780","displayName":"H4G2023","name":"projects/h4g2023","resources":{"hostingSite":"h4g2023"},"state":"ACTIVE","etag":"1_4072914b-9875-4956-8115-f81510ef2d3d"}
+[info] 
+[info] === Serving from '/home/stanleyneoh/projects/H4G2023/backend'...
+[info] 
+[debug] [2023-02-10T18:19:25.554Z] defaultcredentials: writing to file /home/stanleyneoh/.config/firebase/neohstanley_gmail_com_application_default_credentials.json
+[debug] [2023-02-10T18:19:25.555Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/h4g2023/sites 
+[debug] [2023-02-10T18:19:25.556Z] Setting GAC to /home/stanleyneoh/.config/firebase/neohstanley_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/stanleyneoh/.config/firebase/neohstanley_gmail_com_application_default_credentials.json"}}
+[debug] [2023-02-10T18:19:25.557Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023/adminSdkConfig [none]
+[debug] [2023-02-10T18:19:25.822Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023/adminSdkConfig 200
+[debug] [2023-02-10T18:19:25.822Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023/adminSdkConfig {"projectId":"h4g2023","storageBucket":"h4g2023.appspot.com"}
+[debug] [2023-02-10T18:19:26.238Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/h4g2023/sites 200
+[debug] [2023-02-10T18:19:26.238Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/h4g2023/sites {"sites":[{"name":"projects/h4g2023/sites/h4g2023","defaultUrl":"https://h4g2023.web.app","type":"DEFAULT_SITE"},{"name":"projects/h4g2023/sites/h4g2023-nus","defaultUrl":"https://h4g2023-nus.web.app","type":"USER_SITE"}]}
+[debug] [2023-02-10T18:19:26.239Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023/webApps/-/config [none]
+[debug] [2023-02-10T18:19:27.395Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023/webApps/-/config 200
+[debug] [2023-02-10T18:19:27.395Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023/webApps/-/config {"projectId":"h4g2023","appId":"1:482882506780:web:78430dab579b90760c0fd9","storageBucket":"h4g2023.appspot.com","apiKey":"AIzaSyD1KRgAaczePfrPGiJWOlNsdc5ePNiNucI","authDomain":"h4g2023.firebaseapp.com","messagingSenderId":"482882506780","measurementId":"G-2BE74PRP6B"}
+[debug] [2023-02-10T18:19:27.401Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 [none]
+[debug] [2023-02-10T18:19:27.666Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 200
+[debug] [2023-02-10T18:19:27.666Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 {"projectId":"h4g2023","projectNumber":"482882506780","displayName":"H4G2023","name":"projects/h4g2023","resources":{"hostingSite":"h4g2023"},"state":"ACTIVE","etag":"1_4072914b-9875-4956-8115-f81510ef2d3d"}
+[info] i  functions: Watching "/home/stanleyneoh/projects/H4G2023/backend/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/stanleyneoh/projects/H4G2023/backend/functions\" for Cloud Functions..."}}
+[info] i  hosting[h4g2023]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[h4g2023]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-02-10T18:19:27.676Z] Validating nodejs source
+[debug] [2023-02-10T18:19:29.020Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:19:29.020Z] Building nodejs source
+[debug] [2023-02-10T18:19:29.020Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:19:29.022Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:19:29.024Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:19:29.035Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:19:29.035Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:19:29.035Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:19:29.035Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:19:29.037Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:19:29.333Z] Serving at port 8057
+
+[debug] [2023-02-10T18:19:29.505Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:19:29.511Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5001/h4g2023/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/h4g2023/us-central1/api)."}}
+[debug] [2023-02-10T18:19:34.470Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:19:34.470Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:19:34.471Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:19:34.470Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:19:34.471Z] Accepted request GET /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:19:34.474Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:19:34.474Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:19:34.481Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-10T18:19:34.481Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-10T18:19:35.200Z] [runtime-status] [12156] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:19:35.201Z] [runtime-status] [12156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:35.201Z] [runtime-status] [12156] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-10T18:19:35.202Z] [runtime-status] [12156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:35.321Z] [runtime-status] [12156] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-10T18:19:35.321Z] [runtime-status] [12156] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-10T18:19:35.322Z] [runtime-status] [12156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:35.323Z] [runtime-status] [12156] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:19:35.325Z] [runtime-status] [12156] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:35.325Z] [runtime-status] [12156] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-10T18:19:35.403Z] [runtime-status] [12156] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"h4g2023","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\nGuCkZimyO7z5D/wbumGZvDLglQ==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"h4g2023\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\\nGuCkZimyO7z5D/wbumGZvDLglQ==\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[warn] ⚠  functions: The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"The Firebase Authentication emulator is not running, so calls to Firebase Authentication will affect production."}}
+[debug] [2023-02-10T18:19:35.438Z] [runtime-status] [12156] Functions runtime initialized. {"cwd":"/home/stanleyneoh/projects/H4G2023/backend/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Functions runtime initialized. {\"cwd\":\"/home/stanleyneoh/projects/H4G2023/backend/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-02-10T18:19:35.439Z] [runtime-status] [12156] Listening to port: /tmp/fire_emu_87df8978436f770f.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12156] Listening to port: /tmp/fire_emu_87df8978436f770f.sock"}}
+[debug] [2023-02-10T18:19:35.496Z] [worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: IDLE"}}
+[debug] [2023-02-10T18:19:35.496Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:19:35.496Z] [worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[info] >  /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:26 {"user":"/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:26","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:26"}}
+[info] >      print(messages); {"user":"    print(messages);","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     print(messages);"}}
+[info] >      ^ {"user":"    ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  ReferenceError: print is not defined {"user":"ReferenceError: print is not defined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m ReferenceError: print is not defined"}}
+[info] >      at getMessages (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:26:5) {"user":"    at getMessages (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:26:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at getMessages (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:26:5)"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:96:5) {"user":"    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[info] >      at async /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:113:26 {"user":"    at async /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:113:26","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:113:26"}}
+[debug] [2023-02-10T18:19:35.843Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:19:35.844Z] [worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: exited"}}
+[debug] [2023-02-10T18:19:35.844Z] [worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-0b30c057-b4a2-46e5-a70b-3191b01fd64c]: FINISHED"}}
+[debug] [2023-02-10T18:19:43.592Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:19:44.593Z] Validating nodejs source
+[debug] [2023-02-10T18:19:45.114Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:19:45.114Z] Building nodejs source
+[debug] [2023-02-10T18:19:45.115Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:19:45.115Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:19:45.117Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:19:45.421Z] Serving at port 8378
+
+[debug] [2023-02-10T18:19:45.611Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:19:45.614Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:19:45.660Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:19:45.660Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:19:45.660Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:19:45.660Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:19:45.660Z] Accepted request GET /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:19:45.663Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:19:45.663Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:19:45.663Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-10T18:19:45.669Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-10T18:19:45.669Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-10T18:19:46.396Z] [runtime-status] [12194] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:19:46.397Z] [runtime-status] [12194] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:46.397Z] [runtime-status] [12194] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-10T18:19:46.398Z] [runtime-status] [12194] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:46.518Z] [runtime-status] [12194] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-10T18:19:46.519Z] [runtime-status] [12194] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-10T18:19:46.519Z] [runtime-status] [12194] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:46.520Z] [runtime-status] [12194] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:19:46.522Z] [runtime-status] [12194] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:19:46.522Z] [runtime-status] [12194] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-10T18:19:46.602Z] [runtime-status] [12194] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"h4g2023","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\nGuCkZimyO7z5D/wbumGZvDLglQ==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"h4g2023\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\\nGuCkZimyO7z5D/wbumGZvDLglQ==\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-02-10T18:19:46.637Z] [runtime-status] [12194] Functions runtime initialized. {"cwd":"/home/stanleyneoh/projects/H4G2023/backend/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Functions runtime initialized. {\"cwd\":\"/home/stanleyneoh/projects/H4G2023/backend/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-02-10T18:19:46.638Z] [runtime-status] [12194] Listening to port: /tmp/fire_emu_24e63b8b5e801903.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12194] Listening to port: /tmp/fire_emu_24e63b8b5e801903.sock"}}
+[debug] [2023-02-10T18:19:46.684Z] [worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: IDLE"}}
+[debug] [2023-02-10T18:19:46.684Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:19:46.684Z] [worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[info] >  [] {"user":[],"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m []"}}
+[info] >  /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:27 {"user":"/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:27"}}
+[info] >      const earliest = messages[0].sentOn; {"user":"    const earliest = messages[0].sentOn;","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     const earliest = messages[0].sentOn;"}}
+[info] >                                   ^ {"user":"                                 ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m                                  ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  TypeError: Cannot read properties of undefined (reading 'sentOn') {"user":"TypeError: Cannot read properties of undefined (reading 'sentOn')","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: Cannot read properties of undefined (reading 'sentOn')"}}
+[info] >      at getMessages (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:27:34) {"user":"    at getMessages (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:27:34)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at getMessages (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:27:34)"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:96:5) {"user":"    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[info] >      at async /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:113:26 {"user":"    at async /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:113:26","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at async /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:113:26"}}
+[debug] [2023-02-10T18:19:47.028Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:19:47.029Z] [worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: exited"}}
+[debug] [2023-02-10T18:19:47.029Z] [worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f1f7fe0e-f822-48a7-80cf-dae7c999442f]: FINISHED"}}
+[debug] [2023-02-10T18:20:01.797Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:20:02.797Z] Validating nodejs source
+[debug] [2023-02-10T18:20:04.150Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:20:04.150Z] Building nodejs source
+[debug] [2023-02-10T18:20:04.150Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:20:04.151Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:20:04.152Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:20:04.459Z] Serving at port 8430
+
+[debug] [2023-02-10T18:20:04.683Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:20:04.687Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:20:40.070Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:20:41.072Z] Validating nodejs source
+[debug] [2023-02-10T18:20:41.558Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:20:41.558Z] Building nodejs source
+[debug] [2023-02-10T18:20:41.558Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:20:41.561Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:20:41.562Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:20:41.859Z] Serving at port 8660
+
+[debug] [2023-02-10T18:20:42.036Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:20:42.040Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:20:59.205Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:21:00.206Z] Validating nodejs source
+[debug] [2023-02-10T18:21:00.684Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:21:00.684Z] Building nodejs source
+[debug] [2023-02-10T18:21:00.684Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:21:00.685Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:21:00.686Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:21:00.961Z] Serving at port 8260
+
+[debug] [2023-02-10T18:21:01.135Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:21:01.138Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:21:08.595Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:21:09.597Z] Validating nodejs source
+[debug] [2023-02-10T18:21:10.058Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:21:10.058Z] Building nodejs source
+[debug] [2023-02-10T18:21:10.058Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:21:10.059Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:21:10.060Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:21:10.391Z] Serving at port 8698
+
+[debug] [2023-02-10T18:21:10.588Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:21:10.591Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:21:50.772Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:21:51.775Z] Validating nodejs source
+[debug] [2023-02-10T18:21:52.276Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:21:52.276Z] Building nodejs source
+[debug] [2023-02-10T18:21:52.276Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:21:52.277Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:21:52.280Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:21:52.585Z] Serving at port 8532
+
+[debug] [2023-02-10T18:21:52.765Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:21:52.770Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:21:55.003Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:21:56.005Z] Validating nodejs source
+[debug] [2023-02-10T18:21:56.509Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:21:56.509Z] Building nodejs source
+[debug] [2023-02-10T18:21:56.509Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:21:56.510Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:21:56.511Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:21:56.803Z] Serving at port 8064
+
+[debug] [2023-02-10T18:21:56.995Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:21:56.998Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:22:00.757Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:22:01.758Z] Validating nodejs source
+[debug] [2023-02-10T18:22:02.237Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:22:02.237Z] Building nodejs source
+[debug] [2023-02-10T18:22:02.237Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:22:02.238Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:22:02.239Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:22:02.543Z] Serving at port 8529
+
+[debug] [2023-02-10T18:22:02.721Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:22:02.725Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:22:03.206Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:22:04.208Z] Validating nodejs source
+[debug] [2023-02-10T18:22:04.688Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:22:04.688Z] Building nodejs source
+[debug] [2023-02-10T18:22:04.688Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:22:04.689Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:22:04.690Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:22:05.016Z] Serving at port 8570
+
+[debug] [2023-02-10T18:22:05.210Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:22:05.216Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:22:07.440Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:22:07.439Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:22:07.440Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:22:07.439Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:22:07.440Z] Accepted request GET /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:22:07.444Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:22:07.445Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:22:07.445Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-10T18:22:07.453Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-10T18:22:07.453Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-10T18:22:08.146Z] [runtime-status] [12448] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:22:08.147Z] [runtime-status] [12448] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:22:08.147Z] [runtime-status] [12448] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-10T18:22:08.148Z] [runtime-status] [12448] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:22:08.261Z] [runtime-status] [12448] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-10T18:22:08.261Z] [runtime-status] [12448] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-10T18:22:08.262Z] [runtime-status] [12448] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:22:08.262Z] [runtime-status] [12448] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:22:08.264Z] [runtime-status] [12448] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:22:08.264Z] [runtime-status] [12448] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-10T18:22:08.337Z] [runtime-status] [12448] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"h4g2023","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\nGuCkZimyO7z5D/wbumGZvDLglQ==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"h4g2023\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\\nGuCkZimyO7z5D/wbumGZvDLglQ==\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-02-10T18:22:08.370Z] [runtime-status] [12448] Functions runtime initialized. {"cwd":"/home/stanleyneoh/projects/H4G2023/backend/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Functions runtime initialized. {\"cwd\":\"/home/stanleyneoh/projects/H4G2023/backend/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-02-10T18:22:08.371Z] [runtime-status] [12448] Listening to port: /tmp/fire_emu_24a615c1a364035a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12448] Listening to port: /tmp/fire_emu_24a615c1a364035a.sock"}}
+[debug] [2023-02-10T18:22:08.467Z] [worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: IDLE"}}
+[debug] [2023-02-10T18:22:08.467Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:22:08.468Z] [worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:22:08.816Z] [worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: IDLE"}}
+[debug] [2023-02-10T18:22:08.816Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 338.416172ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 338.416172ms"}}
+[info] >  GET /courses/2Ub39oluPrh5iojr4Or0/messages 200 337.195 ms - 15 {"user":"\u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m337.195 ms - 15\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m337.195 ms - 15\u001b[0m"}}
+[debug] [2023-02-10T18:22:36.148Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:22:36.148Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:22:36.149Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:22:36.148Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:22:36.149Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:22:36.153Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:22:36.153Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:22:36.153Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:22:36.153Z] [worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[info] >  /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:15 {"user":"/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:15","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:15"}}
+[info] >      await coursesCollection.doc(id).collection(messageName).set(message); {"user":"    await coursesCollection.doc(id).collection(messageName).set(message);","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     await coursesCollection.doc(id).collection(messageName).set(message);"}}
+[info] >                                                              ^ {"user":"                                                            ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m                                                             ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  TypeError: coursesCollection.doc(...).collection(...).set is not a function {"user":"TypeError: coursesCollection.doc(...).collection(...).set is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: coursesCollection.doc(...).collection(...).set is not a function"}}
+[info] >      at addMessage (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:15:61) {"user":"    at addMessage (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:15:61)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at addMessage (/home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js:15:61)"}}
+[info] >      at /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:106:27 {"user":"    at /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:106:27","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:106:27"}}
+[info] >      at Layer.handle [as handle_request] (/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at next (/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/express/lib/router/route.js:144:13) {"user":"    at next (/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/express/lib/router/route.js:144:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/express/lib/router/route.js:144:13)"}}
+[info] >      at isParticipantMiddleware (/home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:41:9) {"user":"    at isParticipantMiddleware (/home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:41:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at isParticipantMiddleware (/home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js:41:9)"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:96:5) {"user":"    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2023-02-10T18:22:36.200Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:22:36.200Z] [worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: exited"}}
+[debug] [2023-02-10T18:22:36.200Z] [worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-808ce107-8de6-4c02-a8d6-f4d52f49dfb4]: FINISHED"}}
+[debug] [2023-02-10T18:22:52.214Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:22:53.216Z] Validating nodejs source
+[debug] [2023-02-10T18:22:53.741Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:22:53.741Z] Building nodejs source
+[debug] [2023-02-10T18:22:53.741Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:22:53.742Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:22:53.742Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:22:54.039Z] Serving at port 8228
+
+[debug] [2023-02-10T18:22:54.228Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:22:54.230Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:22:59.918Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:22:59.918Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:22:59.918Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:22:59.918Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:22:59.918Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:22:59.921Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:22:59.921Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:22:59.921Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-10T18:22:59.928Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-10T18:22:59.928Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-10T18:23:00.619Z] [runtime-status] [12494] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:23:00.620Z] [runtime-status] [12494] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:23:00.620Z] [runtime-status] [12494] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-10T18:23:00.621Z] [runtime-status] [12494] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:23:00.733Z] [runtime-status] [12494] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-10T18:23:00.733Z] [runtime-status] [12494] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-10T18:23:00.734Z] [runtime-status] [12494] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:23:00.735Z] [runtime-status] [12494] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:23:00.736Z] [runtime-status] [12494] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:23:00.736Z] [runtime-status] [12494] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-10T18:23:00.813Z] [runtime-status] [12494] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"h4g2023","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\nGuCkZimyO7z5D/wbumGZvDLglQ==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"h4g2023\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\\nGuCkZimyO7z5D/wbumGZvDLglQ==\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-02-10T18:23:00.848Z] [runtime-status] [12494] Functions runtime initialized. {"cwd":"/home/stanleyneoh/projects/H4G2023/backend/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Functions runtime initialized. {\"cwd\":\"/home/stanleyneoh/projects/H4G2023/backend/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-02-10T18:23:00.849Z] [runtime-status] [12494] Listening to port: /tmp/fire_emu_03b419d4d6708601.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12494] Listening to port: /tmp/fire_emu_03b419d4d6708601.sock"}}
+[debug] [2023-02-10T18:23:00.943Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:00.943Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:00.943Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:01.314Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:01.314Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 361.704695ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 361.704695ms"}}
+[info] >  POST /courses/2Ub39oluPrh5iojr4Or0/messages 200 360.627 ms - 121 {"user":"\u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m360.627 ms - 121\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m360.627 ms - 121\u001b[0m"}}
+[debug] [2023-02-10T18:23:16.425Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:16.425Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:23:16.425Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:16.425Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:23:16.425Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:23:16.427Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:23:16.428Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:23:16.428Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:16.428Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:16.506Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:16.506Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 75.114758ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 75.114758ms"}}
+[info] >  POST /courses/2Ub39oluPrh5iojr4Or0/messages 200 74.707 ms - 123 {"user":"\u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m74.707 ms - 123\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m74.707 ms - 123\u001b[0m"}}
+[debug] [2023-02-10T18:23:19.278Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:19.278Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:23:19.278Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:19.278Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:23:19.278Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:23:19.281Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:23:19.281Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:23:19.281Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:19.281Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:19.386Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:19.387Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 102.339971ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 102.339971ms"}}
+[info] >  POST /courses/2Ub39oluPrh5iojr4Or0/messages 200 101.969 ms - 123 {"user":"\u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m101.969 ms - 123\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m101.969 ms - 123\u001b[0m"}}
+[debug] [2023-02-10T18:23:22.016Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:22.016Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:23:22.016Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:22.016Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:23:22.016Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:23:22.018Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:23:22.018Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:23:22.018Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:22.018Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:22.091Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:22.092Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 71.209968ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 71.209968ms"}}
+[info] >  POST /courses/2Ub39oluPrh5iojr4Or0/messages 200 70.914 ms - 123 {"user":"\u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m70.914 ms - 123\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m70.914 ms - 123\u001b[0m"}}
+[debug] [2023-02-10T18:23:27.007Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:27.007Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:23:27.008Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:27.007Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:23:27.008Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:23:27.010Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:23:27.010Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:23:27.011Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:27.011Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:27.088Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:27.088Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 75.345114ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 75.345114ms"}}
+[info] >  POST /courses/2Ub39oluPrh5iojr4Or0/messages 200 75.018 ms - 123 {"user":"\u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m75.018 ms - 123\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m75.018 ms - 123\u001b[0m"}}
+[debug] [2023-02-10T18:23:31.544Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:31.544Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:23:31.544Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:31.544Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:23:31.544Z] Accepted request POST /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:23:31.546Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:23:31.547Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:23:31.547Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:31.547Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:31.631Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:31.631Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 81.962049ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 81.962049ms"}}
+[info] >  POST /courses/2Ub39oluPrh5iojr4Or0/messages 200 81.676 ms - 123 {"user":"\u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m81.676 ms - 123\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mPOST /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m81.676 ms - 123\u001b[0m"}}
+[debug] [2023-02-10T18:23:34.256Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:34.256Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:23:34.256Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:23:34.256Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:23:34.256Z] Accepted request GET /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages --> us-central1-api
+[debug] [2023-02-10T18:23:34.259Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:23:34.259Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages"}}
+[debug] [2023-02-10T18:23:34.259Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:23:34.259Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:23:34.319Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:23:34.319Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 56.518283ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 56.518283ms"}}
+[info] >  GET /courses/2Ub39oluPrh5iojr4Or0/messages 200 56.069 ms - 804 {"user":"\u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m56.069 ms - 804\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages \u001b[32m200 \u001b[0m56.069 ms - 804\u001b[0m"}}
+[debug] [2023-02-10T18:24:09.759Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:24:09.759Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:24:09.759Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:24:09.759Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:24:09.759Z] Accepted request GET /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 --> us-central1-api
+[debug] [2023-02-10T18:24:09.761Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:24:09.761Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580"}}
+[debug] [2023-02-10T18:24:09.761Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:24:09.761Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:24:09.815Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: IDLE"}}
+[debug] [2023-02-10T18:24:09.815Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 51.108249ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 51.108249ms"}}
+[info] >  GET /courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 200 50.573 ms - 15 {"user":"\u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 \u001b[32m200 \u001b[0m50.573 ms - 15\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 \u001b[32m200 \u001b[0m50.573 ms - 15\u001b[0m"}}
+[debug] [2023-02-10T18:25:35.636Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:25:36.637Z] Validating nodejs source
+[debug] [2023-02-10T18:25:37.129Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:25:37.129Z] Building nodejs source
+[debug] [2023-02-10T18:25:37.129Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:25:37.129Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:25:37.130Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:25:37.219Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/routes/course.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:25:37.423Z] Serving at port 8439
+
+[debug] [2023-02-10T18:25:37.610Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:25:37.613Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:25:37.623Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-02-10T18:25:37.623Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: FINISHING"}}
+[debug] [2023-02-10T18:25:37.629Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: exited"}}
+[debug] [2023-02-10T18:25:37.629Z] [worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2c5c9a3b-ff80-450e-a12e-7680c1df6a38]: FINISHED"}}
+[debug] [2023-02-10T18:25:38.220Z] Validating nodejs source
+[debug] [2023-02-10T18:25:38.712Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:25:38.712Z] Building nodejs source
+[debug] [2023-02-10T18:25:38.712Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:25:38.713Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:25:38.714Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:25:39.027Z] Serving at port 8288
+
+[debug] [2023-02-10T18:25:39.226Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:25:39.229Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:25:41.349Z] [work-queue] {"queuedWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:25:41.349Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-10T18:25:41.349Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages-2023-02-10T18:25:41.349Z"],"workRunningCount":1}
+[debug] [2023-02-10T18:25:41.349Z] Accepted request GET /h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 --> us-central1-api
+[debug] [2023-02-10T18:25:41.352Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-10T18:25:41.352Z] [functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/h4g2023/us-central1/api/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580, mapping to path=/courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580"}}
+[debug] [2023-02-10T18:25:41.352Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-02-10T18:25:41.359Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-02-10T18:25:41.359Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-02-10T18:25:42.052Z] [runtime-status] [12560] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:25:42.053Z] [runtime-status] [12560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:25:42.053Z] [runtime-status] [12560] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-10T18:25:42.054Z] [runtime-status] [12560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:25:42.170Z] [runtime-status] [12560] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-10T18:25:42.171Z] [runtime-status] [12560] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2023-02-10T18:25:42.171Z] [runtime-status] [12560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:25:42.171Z] [runtime-status] [12560] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-10T18:25:42.173Z] [runtime-status] [12560] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2023-02-10T18:25:42.173Z] [runtime-status] [12560] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-10T18:25:42.250Z] [runtime-status] [12560] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"h4g2023","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\nGuCkZimyO7z5D/wbumGZvDLglQ==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"h4g2023\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDvsWdNq4z6nKnd\\nPYnJqjRYfxpMcWLQrpcfE+3AE7xl6+/1MTlEEyo9GvOe84hiifRATdvVAYL2DKMO\\neLBsNMVPDk/7kEKpNSKgeH6vyUKHCWHtByrnfRMvfi2CVGKpwV3Lm5I+zX1pJ2JK\\nGdznxUACBdjR95DXVh2OBs3hwf9bGSoh+Iy93Y2db3w3pS2ZOdXohMxXDZ1UvbjS\\nYsOLl2V6Qw/R85MGMfQs9c/aZm7I71uwA+lGEAzRrGLOXxztRtJOFy0GamzbRJxq\\nE78hSGHO3EbtQza2OFF+oBQXhWnw1Uu9js8MhqDajqqxpL3YRD1qEQ/couL3Eqjb\\nkeyJvGoDAgMBAAECggEABAmX5PH3CJw7YtTdmzvyFRD2dRXlSdwqcMnuXMz84Frq\\n/ML6ksANUnKbIYM7FT+Nf1rwY4Z/NQWrVAm3+MTsN+qd35JslQhdK3RjAMV0Ue1G\\nCFyVnjbBNVWps0vz4KW3Z9I9G54jySi7dXiCfAL2EvvKqIrEFnbGq6u1PfUPrJbq\\nORYhkGmNnNKSOGPgw7DO7qXl6fuPMQmKD/hwYJeRDzH5ot3fJvMyS7+97K2OYVdB\\n43KJKVKnGCSmU0pU3ISqxyQDJJB/Odmmk+0S0fSczqsEieJLMY4Rv9bibhK3gQNJ\\nGiqKHAd+mNa/gdb0y0RuMGUP9MXct6WLocbLlNSfQQKBgQD5/Es4rLmrJeV3dNkW\\n56stCgDClqFf5cFilssb+05IaCLGIy8a994yyctVuwCL6N1yHamZS4LeYojHyqU3\\nfEVHSUec4CHgRfxxAiAZGJOdtYiK3blSMtD3d/5RDPRgogEPbc2aK5nJqOP8z9Pl\\nGYIobnCW3kRhGhKgto7VoDe1QQKBgQD1dbdQmE9kn9BXII+gZIAN/MBu9Bv+4Zb1\\nEJdkRcazlC4ssugcXVtmmE/OQRxT3fvtnZWWSyE8KdxSB6pKays3WQnvl2J0Whwo\\nlsKgrVID9IdiNL9kxaH8FAjPyftT4GDBnXDwTallGu1FHBBn25xTXwUmweK5ogls\\n5XSamgd6QwKBgQCy/deqS9phVjAYOV0bTmO9SvVCXvJLJMoz2j6x2V2y8IU9k4Gt\\n8J5zhROHXe9FPkYY6G5AKdYZfznqvAlSUjOUmD6jb8QxvkrDa78p2PQRLyMGMz33\\nQhVnq843oGv2KOlTb86QPfnOb5RWt0REPOB6LKGHFLynPjDqS+y3vxFEQQKBgQDV\\nk1euCNkL9QKSzQIrzUae5Q2LfVvequtu0MDpvszl9Ek5G3JbO+ALpPvLu1uqnbxX\\nRIaj/zsr3kCWH5VMq3Mu9Ypvrok8NCvMJWGz7Rsv1dT23m6qgEwxyjzgkB7fHJ0T\\n2qoqbWi3UHaja4fa1ntvD36r+ogMfbE1z3FmFB/tgQKBgQCdaHaU+4aBXB5Y0lxZ\\nF6YXXzrU3MUsdhDFbfLjk2qpihlvsKBsJ8lTAN9qAnujMwS+fJmc3Jrhs9vDQkNo\\nkZt5aS2K3XwbrjovKYji1Duowl2yLi4TcvrvdeLYf9iRFJ5wNdicdq3G6ZkEf3hx\\nGuCkZimyO7z5D/wbumGZvDLglQ==\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-nmwms@h4g2023.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2023-02-10T18:25:42.287Z] [runtime-status] [12560] Functions runtime initialized. {"cwd":"/home/stanleyneoh/projects/H4G2023/backend/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Functions runtime initialized. {\"cwd\":\"/home/stanleyneoh/projects/H4G2023/backend/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2023-02-10T18:25:42.288Z] [runtime-status] [12560] Listening to port: /tmp/fire_emu_0b55c07c0d1e5d75.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12560] Listening to port: /tmp/fire_emu_0b55c07c0d1e5d75.sock"}}
+[debug] [2023-02-10T18:25:42.373Z] [worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: IDLE"}}
+[debug] [2023-02-10T18:25:42.374Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2023-02-10T18:25:42.374Z] [worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2023-02-10T18:25:42.724Z] [worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: IDLE"}}
+[debug] [2023-02-10T18:25:42.724Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "api" in 340.942273ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 340.942273ms"}}
+[info] >  GET /courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 200 339.435 ms - 186 {"user":"\u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 \u001b[32m200 \u001b[0m339.435 ms - 186\u001b[0m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[0mGET /courses/2Ub39oluPrh5iojr4Or0/messages?earliest=1676053411580 \u001b[32m200 \u001b[0m339.435 ms - 186\u001b[0m"}}
+[debug] [2023-02-10T18:26:08.731Z] File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/stanleyneoh/projects/H4G2023/backend/functions/util/db/message.js changed, reloading triggers"}}
+[debug] [2023-02-10T18:26:09.733Z] Validating nodejs source
+[debug] [2023-02-10T18:26:10.195Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.2.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-10T18:26:10.196Z] Building nodejs source
+[debug] [2023-02-10T18:26:10.196Z] Failed to find version of module node: reached end of search path /home/stanleyneoh/projects/H4G2023/backend/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-10T18:26:10.197Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-10T18:26:10.197Z] Found firebase-functions binary at '/home/stanleyneoh/projects/H4G2023/backend/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-10T18:26:10.490Z] Serving at port 8014
+
+[debug] [2023-02-10T18:26:10.662Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-10T18:26:10.665Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-02-10T18:26:10.676Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-02-10T18:26:10.677Z] [worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: FINISHING"}}
+[debug] [2023-02-10T18:26:10.682Z] [worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: exited"}}
+[debug] [2023-02-10T18:26:10.682Z] [worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-6fed1d8f-c789-46c0-84b9-af6903c221d1]: FINISHED"}}
