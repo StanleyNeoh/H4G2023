@@ -13,20 +13,20 @@ Utilises the following techstacks:
 
 ## API Documentation
 
-| **Route**                 | **Method** | **Request**                                | **Response**                              | **Description**                           |
-|---------------------------|------------|--------------------------------------------|-------------------------------------------|-------------------------------------------|
-| /course                   | GET        | -                                          | course[]                                  | Gets all courses                          |
-| /course/:id               | GET        | -                                          | course                                    | Gets course of given id                   |
-| /course                   | POST       | { name, description }                      | course                                    | Adds a new course                         |
-| /course/:id               | DELETE     | -                                          | course                                    | Deletes course of given id                |
-| /course/:id               | PATCH      | course (fields optional)                   | course                                    | Updates a course of given id              |
-| /course/:id/participation | POST       | -                                          | { join: true }                            | Join course of given id                   |
-| /course/:id/participation | DELETE     | -                                          | { join: false }                           | Leave course of given id                  |
-| /course/:id/users         | GET        | -                                          | user[]                                    | Gets all users in a course                |
-| /course/:id/message       | POST       | { message }                                | message                                   | Creates a message in the course           |
-| /course/:id/message       | GET        | ?earliest=1676053411580&limit=5            | { earliest, latest, messages: message[] } | Retrieves series of messages              |
-| /user/login               | POST       | {email, password}                          | { token }                                 | Retrieves login token                     |
-| /user                     | GET        | -                                          | user                                      | Gets logged in user details               |
-| /user                     | POST       | {name, email, password}                    | { token }                                 | Creates account and retrieves login token |
-| /user                     | PATCH      | {name?, type?, street?, sex?, disability?} | { message }                               | Updates user details                      |
-| /user/courses             | GET        | -                                          | course[]                                  | Get all courses that user joined          |
+| **Route**                  | **Method** | **Request**                                | **Response**                              | **Description**                           |
+|----------------------------|------------|--------------------------------------------|-------------------------------------------|-------------------------------------------|
+| /courses                   | GET        | -                                          | course[]                                  | Gets all courses                          |
+| /courses/:id               | GET        | -                                          | course                                    | Gets course of given id                   |
+| /courses                   | POST       | { name, description }                      | course                                    | Adds a new course                         |
+| /courses/:id               | DELETE     | -                                          | course                                    | Deletes course of given id                |
+| /courses/:id               | PATCH      | course (fields optional)                   | course                                    | Updates a course of given id              |
+| /courses/:id/participation | POST       | -                                          | { join: true }                            | Join course of given id                   |
+| /courses/:id/participation | DELETE     | -                                          | { join: false }                           | Leave course of given id                  |
+| /courses/:id/users         | GET        | -                                          | user[]                                    | Gets all users in a course                |
+| /courses/:id/message       | POST       | { message }                                | message                                   | Creates a message in the course           |
+| /courses/:id/message       | GET        | ?earliest=1676053411580&limit=5            | { earliest, latest, messages: message[] } | Retrieves series of messages              |
+| /users/login               | POST       | {email, password}                          | { token }                                 | Retrieves login token                     |
+| /users                     | GET        | -                                          | user                                      | Gets logged in user details               |
+| /users                     | POST       | {name, email, password}                    | { token }                                 | Creates account and retrieves login token |
+| /users                     | PATCH      | {name?, type?, street?, sex?, disability?} | { message }                               | Updates user details                      |
+| /users/courses             | GET        | -                                          | course[]                                  | Get all courses that user joined          |
