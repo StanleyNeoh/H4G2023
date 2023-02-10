@@ -31,13 +31,13 @@ const Home = () => {
 
   return (
     <Box margin="auto" maxWidth="lg">
-      <Typography
+      {localStorage.getItem("AuthToken") ? <Typography
         gutterBottom
         variant="h3"
         sx={{ mx: 3 }}
       >
         Welcome back, {name}!
-      </Typography>
+      </Typography> : ""}
       <Header
         title="A place where people help one another and no one is left behind"
         description="- Aspirations of Puay Kheng -"
