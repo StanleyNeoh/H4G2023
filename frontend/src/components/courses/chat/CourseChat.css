@@ -1,0 +1,28 @@
+.chatSection {
+    width: '100%';
+    height: '80vh';
+}
+
+.borderRight500 {
+    border-right: '1px solid #e0e0e0';
+}
+
+.messageArea {
+    height: '70vh';
+    overflow-y: 'auto';
+}
+
+.message-right {
+    align-self: flex-end;
+}
+
+.message-left {
+    align-self: flex-start;
+}
+
+.message-container {
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+    overflow-y: scroll;
+}

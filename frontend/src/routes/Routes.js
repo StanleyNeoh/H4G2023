@@ -7,6 +7,7 @@ import NavBar from '../components/navbar/NavBar';
 import Footer from '../components/footer/Footer';
 import Login from '../pages/auth/LoginPage';
 import Register from '../pages/auth/RegisterPage';
+import CourseChat from '../components/courses/chat/CourseChat';
 
 const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AppRoutes = () => {
         <Route exact path="/about" element={<CourseDetailsPage />} />
         <Route exact path="/courses" element={<AllCouresPage />} />
         <Route exact path="/courses/:category/:courseName" element={<CourseDetailsPage />} />
+        <Route exact path="/courses/:category/:courseName/chat" element={<CourseChat />} />
       </Routes>
       <Footer />
     </Router>
