@@ -19,8 +19,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var userRouter = require('./routes/users');
 var courseRouter = require('./routes/course');
+var reviewRouter = require('./routes/reviews');
 
 app.use('/users', cors(), userRouter);
 app.use('/courses', cors(), courseRouter);
+app.use('/reviews', cors(), reviewRouter);
 
 exports.api = functions.https.onRequest(app);
