@@ -17,8 +17,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var userRouter = require('./routes/users');
 var courseRouter = require('./routes/course');
+var reviewRouter = require('./routes/reviews');
 
 app.use('/users', userRouter);
 app.use('/courses', courseRouter);
+app.use('/reviews', reviewRouter);
 
 exports.api = functions.https.onRequest(app);
