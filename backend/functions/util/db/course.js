@@ -11,6 +11,11 @@ async function getCourse(id) {
     return course;
 }
 
+async function isOwner(uid, courseId) {
+    const course = await getCourse(courseId);
+    return uid == course.ownerUid;
+}
+
 async function getAllCourses() {
     const snapshot = await coursesCollection.get();
     const courses = [];
@@ -22,8 +27,8 @@ async function getAllCourses() {
     return courses;
 }
 
-async function addCourse(courseDetails) {
-    const { id } = await coursesCollection.add(courseDetails);
+async function addCourse(ownerUid, courseDetails) {
+    const { id } = await coursesCollection.add({...courseDetails, ownerUid});
     return await getCourse(id);
 }
 
@@ -39,8 +44,12 @@ async function updateCourse(id, updates) {
     return await getCourse(id);
 }
 
+
 module.exports = {
+    coursesName,
+    coursesCollection,
     getCourse,
+    isOwner,
     getAllCourses,
     addCourse,
     deleteCourse,
