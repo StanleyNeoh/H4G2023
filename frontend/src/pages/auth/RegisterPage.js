@@ -51,7 +51,7 @@ const Register = () => {
                     sx={{ mt: 3, mb: 2, background: '#FF4820', color: 'white' }}
                 >Sign Up</Button>
             </Box>
-            <Grid container sx={{py: 7}}>
+            <Grid container sx={{py: 20}}>
               <Grid item xs>
               </Grid>
               <Grid item>
