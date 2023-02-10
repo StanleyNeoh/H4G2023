@@ -35,14 +35,11 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         await fetch(register_API_path, settings)
-            .then(res => console.log(res))
-            // .then(res => {
-            //     if (res.status == 200) {
-            //         // navigate("")
-            //         console.log("SUCCESSFULLY REGISTERED")
-            //     }
-            //     return res.json()
-            // })
+            .then(res => res.json())
+            .then(obj => {
+                localStorage.setItem("token", obj.token)
+                navigate("/")
+            })
             .catch(err => console.log(err))
     }
 

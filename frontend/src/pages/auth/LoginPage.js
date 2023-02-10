@@ -29,12 +29,10 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         await fetch(login_API_path, settings)
-            .then(res => {
-                console.log(res)
-                if (res.status == 200) {
-                    localStorage.setItem("token", res.json())
-                }
-                return res.json()
+            .then(res => res.json())
+            .then(obj => {
+                localStorage.setItem("token", obj.token)
+                navigate("/")
             })
             .catch(err => console.log(err))
     }
