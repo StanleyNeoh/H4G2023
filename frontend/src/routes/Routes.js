@@ -5,8 +5,8 @@ import CourseDetailsPage from '../pages/CourseDetailsPage'
 import AllCouresPage from '../pages/AllCouresPage';
 import NavBar from '../components/navbar/NavBar';
 import Footer from '../components/footer/Footer';
-import Login from '../components/auth/Login';
-import Register from '../components/auth/Register';
+import Login from '../pages/auth/LoginPage';
+import Register from '../pages/auth/RegisterPage';
 
 const AppRoutes = () => {
   return (
