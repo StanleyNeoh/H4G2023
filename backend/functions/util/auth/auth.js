@@ -1,4 +1,4 @@
-var { admin, db } = require('./admin');
+var { auth, db } = require('../admin');
 
 module.exports = (req, res, next) => {
 	var token;
@@ -8,8 +8,7 @@ module.exports = (req, res, next) => {
 		return res.status(403).json({ error: 'Unauthorized' });
 	}
 
-	admin
-		.auth()
+	auth
 		.verifyIdToken(token)
 		.then((decodedToken) => {
 			req.user = decodedToken;

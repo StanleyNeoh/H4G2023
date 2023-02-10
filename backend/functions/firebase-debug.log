@@ -1,0 +1,17 @@
+[debug] [2023-02-10T12:42:16.619Z] ----------------------------------------------------------------------
+[debug] [2023-02-10T12:42:16.621Z] Command:       /usr/local/bin/firebase /home/stanleyneoh/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2023-02-10T12:42:16.621Z] CLI Version:   11.22.0
+[debug] [2023-02-10T12:42:16.621Z] Platform:      linux
+[debug] [2023-02-10T12:42:16.621Z] Node Version:  v16.16.0
+[debug] [2023-02-10T12:42:16.622Z] Time:          Fri Feb 10 2023 20:42:16 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-10T12:42:16.622Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-10T12:42:16.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-10T12:42:16.685Z] > authorizing via signed-in user (neohstanley@gmail.com)
+[debug] [2023-02-10T12:42:16.685Z] [iam] checking project h4g2023 for permissions ["firebase.projects.get"]
+[debug] [2023-02-10T12:42:16.687Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions [none]
+[debug] [2023-02-10T12:42:16.687Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions x-goog-quota-user=projects/h4g2023
+[debug] [2023-02-10T12:42:16.687Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-10T12:42:17.701Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions 200
+[debug] [2023-02-10T12:42:17.702Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/h4g2023:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-10T12:42:17.702Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/h4g2023 [none]
