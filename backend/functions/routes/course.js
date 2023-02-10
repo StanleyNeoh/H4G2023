@@ -2,6 +2,7 @@ const express = require('express');
 const isAuth = require('../util/auth/auth');
 const {
     getCourse,
+    isOwner,
     getAllCourses,
     addCourse,
     deleteCourse,
@@ -16,8 +17,21 @@ const {
 
 const router = express.Router();
 
-router.post('/', async (req, res, next) => {
-    const course = await addCourse(req.body);
+// Middleware
+async function isOwnerMiddleware(req, res, next) {
+    const { uid } = req.user;
+    const { id } = req.params;
+    if (await isOwner(uid, id)) {
+        next();
+    } else {
+        res.status(403).json({ error: 'Unauthorized (Not Owner)' });
+    }
+}
+
+// Routes
+router.post('/', isAuth, async (req, res, next) => {
+    const { uid } = req.user;
+    const course = await addCourse(uid, req.body);
     res.json(course);
 });
 
@@ -36,13 +50,13 @@ router.get('/:id', async (req, res, next) => {
     }
 });
 
-router.delete('/:id', async (req, res, next) => {
+router.delete('/:id', isAuth, isOwnerMiddleware, async (req, res, next) => {
     const { id } = req.params;
     const course = await deleteCourse(id);
     res.json(course);
 });
 
-router.patch('/:id', async (req, res, next) => {
+router.patch('/:id', isAuth, isOwnerMiddleware, async (req, res, next) => {
     const { id } = req.params;
     const updates = req.body;
     const course = await updateCourse(id, updates);
