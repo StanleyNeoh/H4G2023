@@ -10,17 +10,27 @@ const {
     getAllCourseReviews,
 } = require('../util/db/review');
 
+const {
+    getCourse
+} = require('../util/db/course');
+
 const router = express.Router();
 
 router.use(isAuth);
 
 router.post('/:courseId', async (req, res, next) => {
+    const course = await getCourse(req.params.courseId); 
+    if (course == null) {
+        return res.status(400).json({message: "Course does not exist"});
+    } 
+
     const newReview = {
         comment: req.body.comment, 
         stars: req.body.stars, 
         userId: req.user.uid, 
         courseId: req.params.courseId
     }
+
     const review = await addReview(newReview);
     return res.status(201).json(review);
 });
@@ -31,6 +41,11 @@ router.get('/', async (req, res, next) => {
 });
 
 router.get('/course/:courseId', async (req, res, next) => {
+    const course = await getCourse(req.params.courseId); 
+    if (course == null) {
+        return res.status(400).json({message: "Course does not exist"});
+    } 
+
     const courseReviews = await getAllCourseReviews(req.params.courseId);
     return res.status(201).json(courseReviews);
 });
