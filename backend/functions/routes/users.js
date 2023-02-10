@@ -36,7 +36,7 @@ router.post('/login', function (req, res, next) {
 });
 
 // Sign up 
-router.post('/signup', function (req, res) {
+router.post('/', function (req, res) {
     const newUser = {
         name: req.body.name,
         email: req.body.email,
@@ -91,7 +91,7 @@ router.post('/signup', function (req, res) {
 router.use(authMiddleware);
 
 // Update profile 
-router.patch('/update', function(req, res, next) {
+router.patch('/', function(req, res, next) {
     let user = db.doc(`/users/${req.user.email}`);
 
     let newInfo = {

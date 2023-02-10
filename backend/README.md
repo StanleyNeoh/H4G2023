@@ -11,16 +11,16 @@ Utilises the following techstacks:
 1. run `npm install` to install dependencies
 1. run `firebase serve` to serve functions locally
 
-##
+## API Documentation
 
-| **Route**    | **Method** | **Request**                                           | **Response** | **Description**                           |
-|--------------|------------|-------------------------------------------------------|--------------|-------------------------------------------|
-| /course      | GET        | -                                                     | course[]     | Gets all courses                          |
-| /course/:id  | GET        | -                                                     | course       | Gets course of given id                   |
-| /course      | POST       | { name, description }                                 | course       | Adds a new course                         |
-| /course/:id  | DELETE     | -                                                     | course       | Deletes course of given id                |
-| /course/:id  | PATCH      | course (fields optional)                              | course       | Updates a course of given id              |
-| /user/login  | POST       | {email, password}                                     | { token }    | Retrieves login token                     |
-| /user        | GET        | -                                                     | user         | Gets logged in user details               |
-| /user/signup | POST       | {name, email, password}                               | { token }    | Creates account and retrieves login token |
-| /user/update | PATCH      | {name?, password?, type?, street?, sex?, disability?} | { message }  | Updates user details                      |
+| **Route**   | **Method** | **Request**                                           | **Response** | **Description**                           |
+|-------------|------------|-------------------------------------------------------|--------------|-------------------------------------------|
+| /course     | GET        | -                                                     | course[]     | Gets all courses                          |
+| /course/:id | GET        | -                                                     | course       | Gets course of given id                   |
+| /course     | POST       | { name, description }                                 | course       | Adds a new course                         |
+| /course/:id | DELETE     | -                                                     | course       | Deletes course of given id                |
+| /course/:id | PATCH      | course (fields optional)                              | course       | Updates a course of given id              |
+| /user/login | POST       | {email, password}                                     | { token }    | Retrieves login token                     |
+| /user       | GET        | -                                                     | user         | Gets logged in user details               |
+| /user       | POST       | {name, email, password}                               | { token }    | Creates account and retrieves login token |
+| /user       | PATCH      | {name?, password?, type?, street?, sex?, disability?} | { message }  | Updates user details                      |
