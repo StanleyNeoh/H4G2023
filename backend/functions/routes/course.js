@@ -1,13 +1,18 @@
 const express = require('express');
 const isAuth = require('../util/auth/auth');
 const {
-    getUserCourse,
-    isUserInCourse,
+    getCourse,
+    getAllCourses,
+    addCourse,
+    deleteCourse,
+    updateCourse,
+} = require('../util/db/course');
+
+const {
     joinCourse,
     leaveCourse,
-    getAllJoinedCourses,
     getAllParticipants,
-} = require('../util/db/course');
+} = require('../util/db/user_course');
 
 const router = express.Router();
 
@@ -46,14 +51,14 @@ router.patch('/:id', async (req, res, next) => {
 
 router.post('/:id/participation', isAuth, async (req, res, next) => {
     const courseId = req.params.id;
-    const userId = req.user.id;
+    const userId = req.user.uid;
     await joinCourse(userId, courseId);
     res.json({ join: true });
 });
 
 router.delete('/:id/participation', isAuth, async (req, res, next) => {
     const courseId = req.params.id;
-    const userId = req.user.id;
+    const userId = req.user.uid;
     await leaveCourse(userId, courseId);
     res.json({ join: false });
 });

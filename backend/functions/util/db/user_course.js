@@ -6,20 +6,23 @@ const { getCourse } = require('./course');
 const { getUser } = require('./user');
 
 async function getUserCourse(userId, courseId) {
-    const doc = await userCourseCollection
+    const snapshot = await userCourseCollection
         .where("userId", "==", userId)
         .where("courseId", "==", courseId).get();
-    if (!doc.exists()) return null;
-    return doc.data();
+    if (snapshot.docs.length == 0) return null;
+    return snapshot.docs[0].data();
 }
 
 async function isUserInCourse(userId, courseId) {
-    return await getUserCourse(userId, courseId) != null;
+    const userCourse = await getUserCourse(userId, courseId);
+    return userCourse != null;
 }
 
 async function joinCourse(userId, courseId) {
-    if (!await isUserInCourse(userId, courseId)) return;
-    await userCourseCollection.add({ userId, courseId });
+    const joined = await isUserInCourse(userId, courseId);
+    if (joined) return;
+    const res = await userCourseCollection.add({ userId, courseId });
+    console.log(res);
 }
 
 async function leaveCourse(userId, courseId) {

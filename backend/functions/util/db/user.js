@@ -3,27 +3,27 @@ const { db } = require('../admin');
 const usersName = "users";
 const usersCollection = db.collection(usersName);
 
-async function getUser(id) {
-    const doc = await usersCollection.doc(id).get();
+async function getUser(uid) {
+    const doc = await usersCollection.doc(uid).get();
     if (!doc.exists) return null;
     const user = doc.data();
-    user.id = doc.id;
-    return course;
+    user.uid = doc.id;
+    return user;
 }
 
-async function addUser(id, userDetails) {
-    await usersCollection.doc(id).set(userDetails);
-    return await getUser(id);
+async function addUser(uid, userDetails) {
+    await usersCollection.doc(uid).set(userDetails);
+    return await getUser(uid);
 }
 
-async function updateUser(id, userDetails) {
-    await usersCollection.doc(id).update(userDetails);
-    return await getUser(id);
+async function updateUser(uid, userDetails) {
+    await usersCollection.doc(uid).update(userDetails);
+    return await getUser(uid);
 }
 
-async function deleteUser(id) {
-    const user = await getUser(id);
-    await usersCollection.doc(id).delete();
+async function deleteUser(uid) {
+    const user = await getUser(uid);
+    await usersCollection.doc(uid).delete();
     return user;
 }
 
