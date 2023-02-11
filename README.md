@@ -17,6 +17,7 @@ A web application with an emphasis on inclusivity, and accommodation that allows
 * MaterialUI
 
 ### Backend
+> More information about backend can be found in `README.md` in `backend/`
 * Express.JS
 * Node.JS
 * Firebase
@@ -27,7 +28,7 @@ A web application with an emphasis on inclusivity, and accommodation that allows
 ## Installation and setup
 
 ### Startup frontend
-1. Open a new terminal and cd into frontend folder
+1. Open a new terminal and cd into `frontend/` folder
 1. Run the following
 ```
 npm install
@@ -35,7 +36,7 @@ npm start
 ```
 
 ### Startup backend
-1. Open a new terminal and cd into the backend folder
+1. Open a new terminal and cd into the `backend/` folder
 1. Run the following
 ```
 npm install
