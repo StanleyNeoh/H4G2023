@@ -8,6 +8,7 @@ import Footer from '../components/footer/Footer';
 import Login from '../pages/auth/LoginPage';
 import Register from '../pages/auth/RegisterPage';
 import CourseChat from '../components/courses/chat/CourseChat';
+import Page404 from '../pages/Page404';
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
         <Route exact path="/courses" element={<AllCouresPage />} />
         <Route exact path="/courses/:category/:courseName" element={<CourseDetailsPage />} />
         <Route exact path="/courses/:category/:courseName/chat" element={<CourseChat />} />
+        <Route path='/*' element={<Page404 />}></Route>
       </Routes>
       <Footer />
     </Router>
