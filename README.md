@@ -45,4 +45,4 @@ firebase serve
 ```
 
 ## Entity relation diagram
-![erd](./blobs/erd.png)
+![erd](./blobs/erd-light.png)
