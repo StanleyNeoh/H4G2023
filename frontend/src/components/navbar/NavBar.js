@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Menu from '@mui/icons-material/Menu'
 import MenuOpen from '@mui/icons-material/MenuOpen'
-import AdbIcon from '@mui/icons-material/Adb'
+import Logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
@@ -11,8 +11,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-links">
+        <div className="navbar-links_logo">
+          <Link to="/">
+            <img src={Logo} alt='' />
+          </Link>
+        </div>
         <div className="navbar-links_container">
-          <AdbIcon />
           <p><Link to='/'>Home</Link></p>
           <p><Link to='/about'>About</Link></p>
           <p><Link to='/courses'>Courses</Link></p>
@@ -29,9 +33,9 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="navbar-menu_container scale-up-center">
           <div className="navbar-menu_container-links">
-            <p><Link to='/'>Home</Link></p>
-            <p><Link to='/about'>About</Link></p>
-            <p><Link to='/courses'>Courses</Link></p>
+            <p><Link to='/' onClick={() => setToggleMenu(false)}>Home</Link></p>
+            <p><Link to='/about' onClick={() => setToggleMenu(false)}>About</Link></p>
+            <p><Link to='/courses' onClick={() => setToggleMenu(false)}>Courses</Link></p>
           </div>
           <div className="navbar-menu_container-links-sign">
             <p>Sign in</p>
