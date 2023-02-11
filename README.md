@@ -47,5 +47,8 @@ firebase serve
 ### User Guide
 You may click [here](https://docs.google.com/document/d/1b9i6vkPXQlwS_xyvvJ9ckoJ8CNmnQogXNRL-pkvDJJ4/edit?usp=sharing) to see a walkthrough on how to use the application
 
+### Pitch deck
+You may click [here](https://docs.google.com/presentation/d/1Z9WIhwO0naFTpgqwqU1gwiXrtPYaU9ZX7dRbO7tRBvs/edit?usp=sharing) to see our pitch deck
+
 ## Entity relation diagram
 ![erd](./blobs/erd-dark.png)
