@@ -3,13 +3,20 @@
 Utilises the following techstacks:
 * Firebase functions
 * Firestore
-* Express
+* Express.JS
 * Firebase authentication
 
 ## Setup and installation
 1. cd into the backend folder
 1. run `npm install` to install dependencies
 1. run `firebase serve` to serve functions locally
+
+## Types
+| User    | { uid, type: 1\|2, email, name, street, sex: "female"\|"male"\|"others", disability } |
+|---------|---------------------------------------------------------------------------------------|
+| Course  | { id, title, description, ownerUid, disability_accomodated, duration, fee, timing }   |
+| Review  | { comment, stars: 0\|1\|2\|3\|4\|5, courseId, userId }                                |
+| Message | { msg, senderUid, sentOn }                                                            |
 
 ## API Documentation
 

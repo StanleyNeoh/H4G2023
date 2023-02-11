@@ -43,3 +43,6 @@ npm install
 npm install -g firebase-tools
 firebase serve
 ```
+
+## Entity relation diagram
+![erd](./blobs/erd.png)
