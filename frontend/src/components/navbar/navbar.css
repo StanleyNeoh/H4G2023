@@ -23,8 +23,8 @@ a {
 }
 
 .navbar-links_logo img {
-    width: 62.56px;
-    height: 16.02px;
+    width: 75.56px;
+    height: 40.56px;
 }
 
 .navbar-links_container {
@@ -85,9 +85,10 @@ a {
     flex-direction: column;
     
     text-align: end;
-    background-color: lightgray;
+    background-color: rgb(107, 106, 106);
     padding: 2rem;
     position: absolute;
+    z-index: 2;
     right: 0;
     top: 40px;
     margin-top: 1rem;
