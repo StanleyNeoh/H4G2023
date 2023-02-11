@@ -4,6 +4,7 @@ import { Typography, Box } from "@mui/material";
 import Banner from '../images/banner.png'
 import { useEffect, useState } from "react";
 import { get_user_details_API_path } from "../strings";
+import Section from "../components/home/section/Section";
 
 const Home = () => {
   const [name, setName] = useState("")
@@ -44,34 +45,14 @@ const Home = () => {
         image={Banner}
         imageText='main image description'
       />
-      <Typography
-        gutterBottom
-        variant="h3"
-        sx={{ mx: 3, mt: 10 }}
-      >
-        Together
-      </Typography>
-      <Typography
-        gutterBottom
-        variant="h6"
-        sx={{ mx: 3, textAlign: 'justify' }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
-      <Typography
-        gutterBottom
-        variant="h3"
-        sx={{ mx: 3, mt: 10 }}
-      >
-        Mission
-      </Typography>
-      <Typography
-        gutterBottom
-        variant="h6"
-        sx={{ mx: 3, textAlign: 'justify' }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </Typography>
+      <Section
+        title="Story"
+        content="How might we, as a community empower, equip and co-create with persons with disabilities to enable them to access, use and enjoy places, services, produces and/or information, whether physical or virtual, so that persons with disabilities can connect to and be included in the wider community?"
+      />
+      <Section
+        title="Vision"
+        content="HeartShare is a platform with an emphasis on inclusivity, and accommodation that allows persons with or without disabilities alike to conduct classes catered for other persons with disabilities."
+      />
       <Typography
         gutterBottom
         variant="h3"
